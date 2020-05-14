@@ -1,0 +1,43 @@
+/* =============
+    Section 1
+============= */
+#section-1{
+    div{
+        background-image: url('../img/main_slide_21.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+
+        text-align: center;
+        padding-top: 80px;
+
+        #start{
+            color: $white;
+            padding-top: 250px;
+            font-size: rem-calc(20);
+        
+        }
+
+
+        @include md{
+            max-height: 700px;
+        }
+
+        @include lg{
+            max-height: 800px;
+        }
+
+        @include xl{
+            font-size: rem-calc(20);
+            max-height: 950px;
+            
+            // #intro{
+            //     margin: 20px 100px;
+            // }
+        }
+
+        
+
+    }
+
+}

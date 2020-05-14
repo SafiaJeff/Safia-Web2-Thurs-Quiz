@@ -1,0 +1,55 @@
+/* =============
+    Footer
+============= */
+#footer{
+    background-color: $black;
+    color: $white;
+    padding: 50px 80px;
+    
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". footer ."
+
+    #footer-content{
+        grid-area: footer;
+        grid-template-rows: auto auto;
+        grid-template-areas: "icons"
+                                "drexel";
+    }
+
+    #social-icons{
+        grid-area: icons;
+    }
+                            
+    p{
+        grid-area: drexel;
+    }
+    
+    // display: grid;
+    // grid-template-columns: 50px auto 50px;
+    // grid-template-areas: ". footer .";
+
+    // #footer-content{
+    //     grid-area: footer;
+    //     display: grid;
+    //     grid-template-columns: auto;
+    //     grid-template-rows: auto auto;
+    //     grid-template-areas: "icons drexel";
+
+    //     #social-icons{
+    //         grid-area: icons;
+    //     }
+
+    //     p{
+    //         grid-area: drexel;
+    //     }
+    // }
+
+
+
+
+
+
+
+}

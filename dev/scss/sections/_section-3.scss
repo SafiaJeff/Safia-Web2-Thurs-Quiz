@@ -1,0 +1,76 @@
+/* =============
+    Section 3
+============= */
+#section-3{
+   div{
+       padding: 30px 10px;
+       img{
+           height: 300px;
+       }
+
+       h1{
+           text-align: center;
+       }
+
+       #mockups{
+           h2{
+               text-align: center;
+               color: $black;
+           }
+
+           p{
+               padding: 10px 10px;
+           }
+
+            #hanging-sign{
+                background-color: $gray; 
+            }
+
+            #biz-card{
+                background-color: $gray;
+            }
+
+            #biz-card-2{
+                background-color: $gray;
+            }
+
+     }
+
+
+        @include md{
+            #mockups{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "sign biz-1"
+                                    "biz-2 biz-2";
+                grid-gap: 40px;
+
+                #hanging-sign{
+                    grid-area: sign;
+                }
+
+                #biz-card{
+                    grid-area: biz-1;
+
+                }
+
+                #biz-card-2{
+                    grid-area: biz-2;
+                }
+            }
+        }
+
+        @include lg{
+            #mockups{
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto;
+                grid-template-areas: "sign biz-1 biz-2"
+            }
+        }
+
+
+
+   }
+
+}
